@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  width: 310px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.game-over {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
