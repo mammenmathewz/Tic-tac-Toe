@@ -141,7 +141,7 @@ const App: React.FC = () => {
     <div className="App">
       <h1>Tic Tac Toe with Minimax AI</h1>
       <div className="board shadow-2xl">
-        {board.map((cell, index) => renderCell(index))}
+        {board.map((_, index) => renderCell(index))}
       </div>
       {gameOver && (
         <div className="game-over">
