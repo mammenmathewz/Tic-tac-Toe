@@ -146,7 +146,7 @@ const App: React.FC = () => {
       {gameOver && (
         <div className="game-over">
           {winner ? <p>Player {winner} wins!</p> : <p>It's a tie!</p>}
-          <button onClick={resetGame}>Play Again</button>
+          <button className='btn' onClick={resetGame}>Play Again</button>
         </div>
       )}
     </div>

@@ -46,3 +46,39 @@
         font-size: 1em;
     }
 }
+
+.btn {
+  background-color: lightblue; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #1f97e2; /* Darker green on hover */
+}
+
+.btn:active {
+  background-color: #439bca; /* Even darker green when clicked */
+}
+
+/* Optional: Add some spacing around the button */
+.game-over .btn {
+  margin-top: 15px; /* Add space between the message and button */
+}
+
+/* Optional: Make the button responsive */
+@media (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
