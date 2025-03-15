@@ -1,15 +1,17 @@
 .App {
   text-align: center;
   margin-top: 20px;
+  padding: 0 10px; /* Add padding for smaller screens */
 }
 
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr); /* Use fr units for responsiveness */
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
   margin: 20px auto;
-  width: 310px;
+  max-width: 300px; /* Limit maximum width */
+  width: 90vw; /* Make width relative to viewport width */
 }
 
 .cell {
@@ -19,9 +21,28 @@
   font-size: 2em;
   cursor: pointer;
   background-color: lightblue;
+  aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
 }
 
 .game-over {
   margin-top: 20px;
   font-size: 1.5em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .cell {
+    font-size: 1.5em; /* Reduce font size on smaller screens */
+  }
+
+  .game-over {
+    font-size: 1.2em; /* Reduce game-over message font size */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 320px) {
+    .cell {
+        font-size: 1em;
+    }
 }
